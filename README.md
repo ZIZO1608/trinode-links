@@ -46,11 +46,15 @@ git push -u origin main
 Open `site/index.html`, find this near the bottom:
 
 ```js
-const lines = ["0995650958", "0987323677", "0993181867"];
+const lines = [
+  { name: "Zaven Jooharian", number: "0995650958" },
+  { name: "Ahmad Sabagh", number: "0987323677" },
+  { name: "Zohrab Arslanian", number: "0993181867" },
+];
 const message = "مرحبا Trinode 👋 حابب استفسر عن خدماتكم";
 ```
 
-Change the numbers or the message, commit, push, and redeploy (or turn on **Auto Deploy** in Coolify so every push goes live).
+Change the names, numbers or the message, commit, push, and redeploy (or turn on **Auto Deploy** in Coolify so every push goes live).
 
 Numbers are written locally (`09…`); the page converts them to `+963…` for the WhatsApp link.
 
